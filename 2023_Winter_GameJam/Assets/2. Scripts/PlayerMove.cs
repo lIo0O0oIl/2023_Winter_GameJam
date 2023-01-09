@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    Animator animator;
+    //Animator animator;
     Rigidbody2D rigidbody2D;
 
     [SerializeField]
@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
@@ -29,7 +29,7 @@ public class PlayerMove : MonoBehaviour
 
     private void MoveAnimation()
     {
-        animator.SetFloat("InputX", rigidbody2D.velocity.x);
-        animator.SetFloat("InputY", rigidbody2D.velocity.y);
+        //animator.SetFloat("InputX", rigidbody2D.velocity.x);
+        //animator.SetFloat("InputY", rigidbody2D.velocity.y);
     }
 }
