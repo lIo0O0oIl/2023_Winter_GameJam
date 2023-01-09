@@ -155,7 +155,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: GGM.GameJam
+    Android: GGM.GaemJam
     Standalone: com.DefaultCompany.2DProject
   buildNumber:
     Standalone: 0
