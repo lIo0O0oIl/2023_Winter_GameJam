@@ -10,6 +10,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField]
     private float speed = 7;
 
+
     private void Start()
     {
         //animator = GetComponent<Animator>();
@@ -32,4 +33,5 @@ public class PlayerMove : MonoBehaviour
         //animator.SetFloat("InputX", rigidbody2D.velocity.x);
         //animator.SetFloat("InputY", rigidbody2D.velocity.y);
     }
+
 }

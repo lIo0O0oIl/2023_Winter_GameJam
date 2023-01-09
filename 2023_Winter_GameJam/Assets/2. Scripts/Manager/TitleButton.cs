@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG;
 
-public class ButtonManager : MonoBehaviour
+public class TitleButton : MonoBehaviour
 {
     [SerializeField]
     private GameObject theme;
@@ -13,6 +13,9 @@ public class ButtonManager : MonoBehaviour
     private GameObject titleTxt;
     [SerializeField]
     private GameObject startBtn;
+    [SerializeField]
+    private GameObject player;
+
     [SerializeField]
     private Image image;
 
@@ -54,6 +57,7 @@ public class ButtonManager : MonoBehaviour
     IEnumerator FandOut(float time)
     {
         theme.SetActive(true);
+        player.SetActive(true);
 
         Color color = image.color;
         while (color.a > 0f)

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - toto
+  - Land
+  - Sea
   layers:
   - Default
   - TransparentFX
