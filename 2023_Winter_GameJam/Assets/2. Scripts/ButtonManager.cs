@@ -16,8 +16,14 @@ public class ButtonManager : MonoBehaviour
 
     }
 
-    public void OnClickEscBtn()
+    public void OnClickExitBtn()
     {
 
+#if UNITY_EDITOR
+        //����Ƽ ������ ���� ����
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+          Application.Quit();
+#endif
     }
 }
