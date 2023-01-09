@@ -241,7 +241,7 @@ GameObject:
   - component: {fileID: 1088603642}
   - component: {fileID: 1088603644}
   m_Layer: 0
-  m_Name: right
+  m_Name: Right
   m_TagString: toto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -486,7 +486,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01fd6159bae893d4c81e8223d5af05b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player2: {fileID: 1088603641}
+  player2: {fileID: 747499828}
   speed: 7
 --- !u!1 &2047613812
 GameObject:
