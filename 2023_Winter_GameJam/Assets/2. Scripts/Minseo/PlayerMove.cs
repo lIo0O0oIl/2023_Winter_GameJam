@@ -26,8 +26,8 @@ public class PlayerMove : MonoBehaviour
     //Rigidbody2D rigidbody2D;
     Rigidbody2D p2_rigidbody2D;
 
-    State state = State.None;
-    Direction direction = Direction.None;
+    //State state = State.None;
+    //Direction direction = Direction.None;
 
     [SerializeField]
     private float speed = 7;
@@ -58,11 +58,11 @@ public class PlayerMove : MonoBehaviour
             //Invoke("movemove", .3f);
         }*/
 
-        if (state == State.End)
+       /* if (state == State.End)
         {
             //time -= Time.deltaTime;
 
-        }
+        }*/
 
         /*if (time < 0)
         {
@@ -74,7 +74,7 @@ public class PlayerMove : MonoBehaviour
             p2_rigidbody2D.velocity = new Vector2(0, 0);
         }*/
 
-        p2_rigidbody2D.velocity = new Vector2(x, y).normalized * speed * Time.deltaTime;
+        p2_rigidbody2D.velocity = new Vector2(x, y).normalized * speed/* * Time.deltaTime*/;
 
     }
     void Move()
@@ -124,7 +124,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (collision.name == "Up" || collision.name == "Right" || collision.name == "Down" || collision.name == "Left")
         {
-            state = State.Moving;
+            //state = State.Moving;
 
             collision.GetComponent<SpriteRenderer>().color = changeColor;
 
@@ -181,7 +181,7 @@ public class PlayerMove : MonoBehaviour
         {
             collision.GetComponent<SpriteRenderer>().color = basicColor;
 
-            state = State.End;
+            //state = State.End;
             //direction = Direction.None;
 
             if (collision.name == "Up" || collision.name == "Down")

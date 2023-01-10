@@ -17,7 +17,7 @@ public class ControllerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody2D.velocity = new Vector2(x, y).normalized * speed * Time.deltaTime;
+        rigidbody2D.velocity = new Vector2(x, y).normalized * speed/* * Time.deltaTime*/;
     }
 
     public void Up(bool check)
@@ -25,12 +25,10 @@ public class ControllerMove : MonoBehaviour
         //Debug.Log("¾÷");
         if (check)
         {
-            //rigidbody2D.velocity = new Vector2(0, 1).normalized * speed;
             y = 1;
         }
         else
         {
-            //rigidbody2D.velocity = new Vector2(0, 0).normalized * speed;
             y = 0;
         }
     }
@@ -39,12 +37,10 @@ public class ControllerMove : MonoBehaviour
     {
         if (check)
         {
-            //rigidbody2D.velocity = new Vector2(0, -1).normalized * speed;
             y = -1;
         }
         else
         {
-            //rigidbody2D.velocity = new Vector2(0, 0).normalized * speed;
             y = 0;
         }
     }
@@ -53,12 +49,10 @@ public class ControllerMove : MonoBehaviour
     {
         if (check)
         {
-            //rigidbody2D.velocity = new Vector2(1, 0).normalized * speed;
             x = 1;
         }
         else
         {
-            //rigidbody2D.velocity = new Vector2(0, 0).normalized * speed;
             x = 0;
         }
     }
@@ -67,12 +61,10 @@ public class ControllerMove : MonoBehaviour
     {
         if (check)
         {
-            //rigidbody2D.velocity = new Vector2(-1, 0).normalized * speed;
             x = -1;
         }
         else
         {
-            //rigidbody2D.velocity = new Vector2(0, 0).normalized * speed;
             x = 0;
         }
     }
