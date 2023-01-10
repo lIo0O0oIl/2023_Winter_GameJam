@@ -5370,7 +5370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1748639819
 Transform:
   m_ObjectHideFlags: 0
@@ -6074,6 +6074,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player2: {fileID: 724545256}
   speed: 300
+  x: 0
+  y: 0
   changeColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
   basicColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!61 &1948295713
