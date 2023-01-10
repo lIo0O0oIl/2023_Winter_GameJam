@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PressButtonGame : MonoBehaviour
 {
@@ -10,15 +12,10 @@ public class PressButtonGame : MonoBehaviour
     [Header("밝아져야 하는 것")]
     public List<GameObject> light = new List<GameObject>();
 
-    int count = 0;
+    [SerializeField]
+    private Image image;
 
-    private void Update()
-    {
-        if(count == 5)
-        {
-            Debug.Log("!!!");
-        }
-    }
+    int count = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -29,6 +26,7 @@ public class PressButtonGame : MonoBehaviour
             light[0].SetActive(true);
 
             count++;
+            Check();
         }
         else if(collision.tag == "Prass1")
         {
@@ -36,6 +34,7 @@ public class PressButtonGame : MonoBehaviour
             light[1].SetActive(true);
 
             count++;
+            Check();
         }
         else if(collision.tag == "Prass2")
         {
@@ -43,6 +42,7 @@ public class PressButtonGame : MonoBehaviour
             light[2].SetActive(true);
 
             count++;
+            Check();
         }
         else if(collision.tag == "Prass3")
         {
@@ -50,6 +50,7 @@ public class PressButtonGame : MonoBehaviour
             light[3].SetActive(true);
 
             count++;
+            Check();
         }
         else if(collision.tag == "Prass4")
         {
@@ -57,6 +58,40 @@ public class PressButtonGame : MonoBehaviour
             light[4].SetActive(true);
 
             count++;
+            Check();
+        }
+    }
+
+    private void Check()
+    {
+        if (count == 5)
+        {
+            StartCoroutine(FandIn(1f));
+        }
+    }
+
+    IEnumerator FandIn(float time)
+    {
+        Color color = image.color;
+        while (color.a < 1f)
+        {
+            color.a += Time.deltaTime / time;
+            image.color = color;
+            yield return null;
+        }
+
+        StartCoroutine(FandOut(1f));
+    }
+    IEnumerator FandOut(float time)
+    {
+        SceneManager.LoadScene("LandTheme1");
+
+        Color color = image.color;
+        while (color.a > 0f)
+        {
+            color.a -= Time.deltaTime / time;
+            image.color = color;
+            yield return null;
         }
     }
 }

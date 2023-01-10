@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/1. Scenes/SeaTheme.unity
     guid: 3ad7fed745a551647b26579ada059565
   - enabled: 1
+    path: Assets/1. Scenes/Land/LandTheme1.unity
+    guid: 2c8ff5ef7ae89dc43ae35d58f9616ae3
+  - enabled: 1
     path: Assets/1. Scenes/Land/LandTheme2.unity
     guid: 4c033d8014d6e3d4796c10ee64e6ce91
   m_configObjects: {}

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0e5df629fe58fb54b83a9108b7a2a0e1
+guid: fcf5b1fda87260d44aad1033829c4c8e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,49 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 222eab8cd7aa62a429f3509d77c321ba
-      internalID: -1961573246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Icon_1
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 48bc1f2f4efe19e409b56171db55b90c
-      internalID: -1401679811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Icon_2
+      name: Bird_0
       rect:
         serializedVersion: 2
         x: 0
@@ -172,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbb3ea25daea5b54eb3b7c9fa27627e7
-      internalID: -1156364942
+      spriteID: 87a038401a4da3a4f8be722407a7bcb1
+      internalID: -711346414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icon_3
+      name: Bird_1
       rect:
         serializedVersion: 2
         x: 16
@@ -193,8 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0e073fabb04f6c459fee837c5628795
-      internalID: 1831578913
+      spriteID: dbe02cda2e82ac9408cb72069a492cfc
+      internalID: -1620501350
       vertices: []
       indices: 
       edges: []
@@ -210,10 +168,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Icon_3: 1831578913
-      Icon_2: -1156364942
-      Icon_0: -1961573246
-      Icon_1: -1401679811
+      Bird_0: -711346414
+      Bird_1: -1620501350
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

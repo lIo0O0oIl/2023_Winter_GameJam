@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0e5df629fe58fb54b83a9108b7a2a0e1
+guid: b791a909b0c146f46b296734b76cb1f8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 8
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,13 +116,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Icon_0
+      name: Earthworm_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
+        x: 1
+        y: 10
+        width: 12
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 222eab8cd7aa62a429f3509d77c321ba
-      internalID: -1961573246
+      spriteID: 077d5319ddadcb841a623b2aaf558269
+      internalID: -934039438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icon_1
+      name: Earthworm_1
       rect:
         serializedVersion: 2
         x: 16
-        y: 16
+        y: 10
         width: 16
-        height: 16
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,20 +151,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48bc1f2f4efe19e409b56171db55b90c
-      internalID: -1401679811
+      spriteID: f4753ce141d08d3478e4e4a708b6ffd6
+      internalID: -991412932
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Icon_2
+      name: Earthworm_2
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 16
+        y: 2
+        width: 14
+        height: 5
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,29 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbb3ea25daea5b54eb3b7c9fa27627e7
-      internalID: -1156364942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Icon_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0e073fabb04f6c459fee837c5628795
-      internalID: 1831578913
+      spriteID: 6c68bccb77eddbb4db3f86297fc84d0a
+      internalID: -191597873
       vertices: []
       indices: 
       edges: []
@@ -210,10 +189,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Icon_3: 1831578913
-      Icon_2: -1156364942
-      Icon_0: -1961573246
-      Icon_1: -1401679811
+      Earthworm_2: -191597873
+      Earthworm_1: -991412932
+      Earthworm_0: -934039438
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
