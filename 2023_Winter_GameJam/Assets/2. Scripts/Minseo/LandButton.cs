@@ -6,11 +6,13 @@ using UnityEngine.UI;
 public class LandButton : MonoBehaviour
 {
     [SerializeField]
-    private GameObject question
-        ;
+    private GameObject question;
+    [SerializeField]
+    private GameObject point;
 
     public void OnClickQuestion()
     {
+        point.SetActive(false);
         question.SetActive(true);
     }
 
