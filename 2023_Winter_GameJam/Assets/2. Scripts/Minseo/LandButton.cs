@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class LandButton : MonoBehaviour
 {
     [SerializeField]
-    private GameObject question;
+    private GameObject question
+        ;
 
     public void OnClickQuestion()
     {

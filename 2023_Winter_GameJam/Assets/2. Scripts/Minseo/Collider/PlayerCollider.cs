@@ -31,12 +31,12 @@ public class PlayerCollider : MonoBehaviour
             yield return null;
         }
 
-        SceneManager.LoadScene("LandTheme");
-
         StartCoroutine(FandOutLand(1f));
     }
     IEnumerator FandOutLand(float time)
     {
+        SceneManager.LoadScene("LandTheme");
+
         Color color = image.color;
         while (color.a > 0f)
         {
@@ -57,12 +57,13 @@ public class PlayerCollider : MonoBehaviour
             yield return null;
         }
 
-        SceneManager.LoadScene("SeaTheme");
-
         StartCoroutine(FandOutSea(1f));
+
     }
     IEnumerator FandOutSea(float time)
     {
+        SceneManager.LoadScene("SeaTheme");
+
         Color color = image.color;
         while (color.a > 0f)
         {

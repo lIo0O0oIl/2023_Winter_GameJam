@@ -7,6 +7,11 @@ TagManager:
   - toto
   - Land
   - Sea
+  - Prass
+  - Prass1
+  - Prass2
+  - Prass3
+  - Prass4
   layers:
   - Default
   - TransparentFX
