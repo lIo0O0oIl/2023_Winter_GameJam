@@ -12,6 +12,7 @@ TagManager:
   - Prass2
   - Prass3
   - Prass4
+  - Goal
   layers:
   - Default
   - TransparentFX

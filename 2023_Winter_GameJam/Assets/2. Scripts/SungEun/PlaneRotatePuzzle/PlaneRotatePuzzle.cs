@@ -8,6 +8,9 @@ public class PlaneRotatePuzzle : MonoBehaviour
 
     public GameObject rightButton, leftButton, resetButton;
 
+    public Vector3 goalVector;
+    public Vector3 planeVector;
+
     int turn = 0, turn2 = 3;
 
     public void RightButton()
@@ -55,7 +58,9 @@ public class PlaneRotatePuzzle : MonoBehaviour
 
     public void ReSetButton()
     {
-        plane.transform.Rotate(0, 0, 180);
-        goal.transform.position = new Vector3(1.197f, 3.054f, 0f);
+        //plane.transform.Rotate(0, 0, 180);
+        //goal.transform.position = new Vector3(1.197f, 3.054f, 0f);
+        plane.transform.Rotate(planeVector);
+        goal.transform.position = goalVector;
     }
 }
