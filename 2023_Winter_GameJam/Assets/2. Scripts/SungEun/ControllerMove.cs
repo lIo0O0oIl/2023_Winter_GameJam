@@ -17,12 +17,12 @@ public class ControllerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rigidbody2D.velocity = new Vector2(x, y).normalized * speed * Time.deltaTime;
+        rigidbody2D.velocity = new Vector2(x, y).normalized * speed/* * Time.deltaTime*/;
     }
 
     public void Up(bool check)
     {
-        //Debug.Log("¾÷");
+        Debug.Log("¾÷");
         if (check)
         {
             y = 1;
