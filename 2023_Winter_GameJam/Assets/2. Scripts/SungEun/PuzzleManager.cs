@@ -29,6 +29,11 @@ public class PuzzleManager : MonoBehaviour
         puzzleArray[0].SetActive(true);
         for (int i = 1; i < puzzleArray.Length; i++)
         {
+            /*if (i == 0)
+            {
+                fader.SetActive(false);
+                continue;
+            }*/
             puzzleArray[i].SetActive(false);
         }
     }
@@ -63,7 +68,7 @@ public class PuzzleManager : MonoBehaviour
     public void puzzle_Clear_1()
     {
         water_Count--;
-        Debug.Log(water_Count);
+        //Debug.Log(water_Count);
 
         if (water_Count <= 0)
         {
@@ -88,10 +93,16 @@ public class PuzzleManager : MonoBehaviour
         button2.GetComponentInChildren<Text>().DOFade(0, 1.7f);
         StartCoroutine(ObjectFalse(button2, 1.7f));
         puzzleArray[1].SetActive(true);
+        SpriteRenderer[] puzzleArray1 = puzzleArray[1].GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer item in puzzleArray1)
+        {
+            item.DOFade(1, 2);
+        }
     }
 
     public void puzzle_Clear_2()
     {
+        Debug.Log("2´Ü°è ÆÛÁñ ±þ");
         fader.GetComponent<SpriteRenderer>().DOFade(1, 3);
         Invoke("puzzle_Start_3", 3f);
     }
@@ -104,6 +115,10 @@ public class PuzzleManager : MonoBehaviour
         player2.transform.position = new Vector2(0, 1.63f);
         //button3.SetActive(true);
         puzzleArray[2].SetActive(true);
-
+        SpriteRenderer[] puzzleArray2 = puzzleArray[2].GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer item in puzzleArray2)
+        {
+            item.DOFade(1, 2);
+        }
     }
 }
