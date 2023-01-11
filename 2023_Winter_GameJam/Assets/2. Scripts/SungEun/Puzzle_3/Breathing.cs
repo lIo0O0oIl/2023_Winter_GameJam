@@ -39,12 +39,13 @@ public class Breathing : MonoBehaviour
 
     IEnumerator Disappear()
     {
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(6f);
         animator.SetBool("Bomb", true);
     }
 
     public void DestroyMe()
     {
+        SoundManager.Instance.Blop();
         Destroy(gameObject);
     }
 

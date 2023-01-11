@@ -33,11 +33,15 @@ public class BreathingGame : MonoBehaviour
         {
             if (!gameClear && !gameOverBool)
             {
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(2f);
                 Debug.Log(count);
                 Instantiate(breathingObj, new Vector2(Random.Range(-1.91f, 1.9741f), Random.Range(1.89f, 4.128f)), Quaternion.identity);
                 count--;
-                yield return new WaitForSeconds(2f);
+                yield return new WaitForSeconds(3f);
+            }
+            else
+            {
+                yield return null;
             }
 
             if (count <= 0)
@@ -58,14 +62,14 @@ public class BreathingGame : MonoBehaviour
             {
                 a -= 0.01f;
                 fader2.color = new Color(1, 0, 0, a);
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.2f);
             }
 
             if (!breathing)
             {
                 a += 0.01f;
                 fader2.color = new Color(1, 0, 0, a);
-                yield return new WaitForSeconds(0.1f);
+                yield return new WaitForSeconds(0.2f);
             }
 
             /*if (a > 0.85f || gameClear)

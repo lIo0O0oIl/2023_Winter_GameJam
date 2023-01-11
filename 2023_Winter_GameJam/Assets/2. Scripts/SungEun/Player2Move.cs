@@ -11,25 +11,29 @@ public class Player2Move : MonoBehaviour
     {
         //Debug.Log("충돌중");
 
-        if (collision.name == "Next")
+        /*if (collision.name == "Next")
         {
             // 저거 뜨기
-        }
+        }*/
 
-
-        if (collision.name == "RightRotate")
+        if (collision.name == "RightRotate" || collision.name == "LeftRotate" || collision.name == "reset")
         {
-            right.Invoke();
-        }
+            if (collision.name == "RightRotate")
+            {
+                right.Invoke();
+            }
 
-        if (collision.name == "LeftRotate")
-        {
-            left.Invoke();
-        }
+            if (collision.name == "LeftRotate")
+            {
+                left.Invoke();
+            }
 
-        if (collision.name == "reset")
-        {
-            reset.Invoke();
+            if (collision.name == "reset")
+            {
+                reset.Invoke();
+            }
+
+            SoundManager.Instance.Button_Click2();
         }
     }
 }
