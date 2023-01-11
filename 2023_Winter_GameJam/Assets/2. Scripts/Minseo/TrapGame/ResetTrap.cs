@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class ResetTrap : MonoBehaviour
 {
-    public Vector3 playerPos;
     public GameObject player;
+
+    public float x;
+    public float y;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.tag == "Player")
         {
-            player.transform.position = playerPos;
+            player.transform.position = new Vector3(x, y, 0f);
+            Debug.Log(player.transform.position);
         }
     }
 }
