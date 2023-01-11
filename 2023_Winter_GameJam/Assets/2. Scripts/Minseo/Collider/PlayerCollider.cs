@@ -7,17 +7,19 @@ using UnityEngine.UI;
 public class PlayerCollider : MonoBehaviour
 {
     [SerializeField]
-    private Image image;
+    private SpriteRenderer image;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Land")
         {
             StartCoroutine(FandInLand(1f));
+            SoundManager.Instance.Button_Cilck();
         }
         else if (collision.tag == "Sea")
         {
             StartCoroutine(FandInSea(1f));
+            SoundManager.Instance.Button_Cilck();
         }
     }
 
@@ -45,6 +47,6 @@ public class PlayerCollider : MonoBehaviour
             yield return null;
         }
 
-        SceneManager.LoadScene("SeaTheme");
+        SceneManager.LoadScene("SeaTheme(true)");
     }
 }

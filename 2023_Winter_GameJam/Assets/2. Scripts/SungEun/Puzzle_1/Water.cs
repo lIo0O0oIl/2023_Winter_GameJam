@@ -25,6 +25,7 @@ public class Water : MonoBehaviour
 
     public void DestroyMe()
     {
+        SoundManager.Instance.Blop();
         Destroy(gameObject);
     }
 }

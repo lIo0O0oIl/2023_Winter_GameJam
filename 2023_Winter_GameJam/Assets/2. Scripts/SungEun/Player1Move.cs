@@ -52,6 +52,7 @@ public class Player1Move : MonoBehaviour
                 StartCoroutine(move(4));
             }
 
+            SoundManager.Instance.Button_Click2();
         }
 
     }
