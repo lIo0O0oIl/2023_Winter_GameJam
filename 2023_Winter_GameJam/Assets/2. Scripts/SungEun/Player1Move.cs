@@ -23,10 +23,13 @@ public class Player1Move : MonoBehaviour
 
     private void Update()
     {
-        p2_rigidbody2D.velocity = new Vector2(x, y).normalized * speed/* * Time.deltaTime*/;
+        if (p2_rigidbody2D.bodyType != RigidbodyType2D.Static)
+        {
+            p2_rigidbody2D.velocity = new Vector2(x, y).normalized * speed/* * Time.deltaTime*/;
+        }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+        private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.name == "Up" || collision.name == "Right" || collision.name == "Down" || collision.name == "Left")
         {

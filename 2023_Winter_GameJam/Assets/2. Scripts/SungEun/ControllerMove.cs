@@ -22,7 +22,7 @@ public class ControllerMove : MonoBehaviour
 
     public void Up(bool check)
     {
-        Debug.Log("¾÷");
+        //Debug.Log("¾÷");
         if (check)
         {
             y = 1;
