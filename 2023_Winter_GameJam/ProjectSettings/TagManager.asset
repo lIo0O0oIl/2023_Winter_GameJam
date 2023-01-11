@@ -14,6 +14,8 @@ TagManager:
   - Prass4
   - Goal
   - Eathworm
+  - BorderY
+  - BorderX
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - Water
   - UI
   - PlayerNoCollision
-  - 
+  - Border
   - 
   - 
   - 

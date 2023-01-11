@@ -26,19 +26,6 @@ public class ClearLineCollider : MonoBehaviour
             image.color = color;
             yield return null;
         }
-
-        StartCoroutine(FandOut(1f));
-    }
-    IEnumerator FandOut(float time)
-    {
         SceneManager.LoadScene("LandTheme2");
-
-        Color color = image.color;
-        while (color.a > 0f)
-        {
-            color.a -= Time.deltaTime / time;
-            image.color = color;
-            yield return null;
-        }
     }
 }
