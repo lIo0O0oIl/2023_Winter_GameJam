@@ -3219,7 +3219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 423793508}
-  speed: 300
+  speed: 2
 --- !u!114 &2006400765
 MonoBehaviour:
   m_ObjectHideFlags: 0

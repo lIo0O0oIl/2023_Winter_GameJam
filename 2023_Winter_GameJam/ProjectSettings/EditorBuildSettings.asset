@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1. Scenes/Land/LandTheme2.unity
     guid: 4c033d8014d6e3d4796c10ee64e6ce91
+  - enabled: 1
+    path: Assets/1. Scenes/Land/LandTheme4.unity
+    guid: b3383b41b3190ef4b8fa5cbd645d8859
   m_configObjects: {}

@@ -1977,7 +1977,7 @@ GameObject:
   - component: {fileID: 551364326}
   m_Layer: 0
   m_Name: Earthworm4
-  m_TagString: Eathworm
+  m_TagString: Prass3
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2134,6 +2134,7 @@ GameObject:
   - component: {fileID: 570589945}
   - component: {fileID: 570589947}
   - component: {fileID: 570589948}
+  - component: {fileID: 570589949}
   m_Layer: 0
   m_Name: Player_2
   m_TagString: Player
@@ -2150,8 +2151,8 @@ Transform:
   m_GameObject: {fileID: 570589942}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.336, y: 2.683, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 395821764}
   m_RootOrder: 1
@@ -2218,7 +2219,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -711346414, guid: fcf5b1fda87260d44aad1033829c4c8e, type: 3}
+  m_Sprite: {fileID: 818285854, guid: ada926e1f58b810428c9215634dbb08d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2287,6 +2288,19 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!114 &570589949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570589942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76ad11196346cc04e9743b2f5a512304, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 1243010410}
 --- !u!1 &642548123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2484,9 +2498,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694672383}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.63, y: -0.94, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -0.39, y: -0.57, z: 0}
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 395821764}
   m_RootOrder: 0
@@ -2522,7 +2536,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.012758374, y: 0.029165328}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2533,7 +2547,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8481002, y: 0.94166934}
   m_EdgeRadius: 0
 --- !u!50 &694672387
 Rigidbody2D:
@@ -2597,7 +2611,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 818285854, guid: ada926e1f58b810428c9215634dbb08d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2732,7 +2746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 694672383}
-  speed: 300
+  speed: 3
 --- !u!114 &775178991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2974,7 +2988,7 @@ GameObject:
   - component: {fileID: 797181683}
   m_Layer: 0
   m_Name: Earthworm1
-  m_TagString: Eathworm
+  m_TagString: Prass
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3134,7 +3148,7 @@ GameObject:
   - component: {fileID: 850623719}
   m_Layer: 0
   m_Name: Earthworm2
-  m_TagString: Eathworm
+  m_TagString: Prass1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5680,7 +5694,7 @@ GameObject:
   - component: {fileID: 1857163744}
   m_Layer: 0
   m_Name: Earthworm3
-  m_TagString: Eathworm
+  m_TagString: Prass2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6816,7 +6830,7 @@ GameObject:
   - component: {fileID: 1985671125}
   m_Layer: 0
   m_Name: Earthworm5
-  m_TagString: Eathworm
+  m_TagString: Prass4
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
