@@ -56,3 +56,6 @@ TagManager:
   - name: UI
     uniqueID: 2981181211
     locked: 0
+  - name: Fader
+    uniqueID: 1749515937
+    locked: 0

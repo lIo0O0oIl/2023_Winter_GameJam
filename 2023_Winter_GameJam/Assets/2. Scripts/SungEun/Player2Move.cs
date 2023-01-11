@@ -9,7 +9,7 @@ public class Player2Move : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("충돌중");
+        //Debug.Log("충돌중");
 
         if (collision.name == "Next")
         {
