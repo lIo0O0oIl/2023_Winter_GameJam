@@ -104,6 +104,10 @@ public class PuzzleManager : MonoBehaviour
         player2.transform.position = new Vector2(0, 1.63f);
         //button3.SetActive(true);
         puzzleArray[2].SetActive(true);
-
+        SpriteRenderer[] puzzleArray2 = puzzleArray[2].GetComponentsInChildren<SpriteRenderer>();
+        foreach (SpriteRenderer item in puzzleArray2)
+        {
+            item.DOFade(1, 2);
+        }
     }
 }

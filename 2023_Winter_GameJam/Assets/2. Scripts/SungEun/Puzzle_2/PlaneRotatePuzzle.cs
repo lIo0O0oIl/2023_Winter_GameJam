@@ -15,8 +15,6 @@ public class PlaneRotatePuzzle : MonoBehaviour
 
     public void RightButton()
     {
-        Debug.Log("");
-
         float z = plane.transform.eulerAngles.z - 90;
 
         plane.transform.DORotate(new Vector3(0, 0, z), 2f).SetEase(Ease.Linear);
@@ -30,12 +28,11 @@ public class PlaneRotatePuzzle : MonoBehaviour
 
         plane.transform.DORotate(new Vector3(0, 0, z), 2f).SetEase(Ease.Linear);
 
-        StartCoroutine(ColliderFalse(true));
+        StartCoroutine(ColliderFalse(false));
     }
 
     IEnumerator ColliderFalse(bool right)
     {
-
         if (right)
         {
             rightButton.GetComponent<CircleCollider2D>().enabled = false;
