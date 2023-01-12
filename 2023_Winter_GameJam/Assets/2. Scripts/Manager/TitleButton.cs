@@ -1,10 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-using UnityEngine.UI;
-using DG.Tweening;
-using System.IO;
 
 public class TitleButton : MonoBehaviour
 {
@@ -38,27 +34,14 @@ public class TitleButton : MonoBehaviour
         themeManager.GetComponent<ThemeClearManager>().ThemeStart();
     }
 
-
-    public void GameReset()
-    {
-        gameReset.SetActive(true);
-    }
-
-    public void Click_GameReset()
-    {
-        File.Delete(Application.dataPath + "/8. Data/SaveData.txt");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
-
-
-    public void OnClickExitBtn()
+    /*public void OnClickExitBtn()
     {
 #if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false;
 #else
           Application.Quit();
 #endif
-    }
+    }*/
 
     IEnumerator FandIn(float time)
     {

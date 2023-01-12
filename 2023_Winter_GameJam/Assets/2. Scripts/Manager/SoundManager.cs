@@ -13,7 +13,7 @@ public class SoundManager : Singleton<SoundManager>
 
     public Slider setting;
 
-    public GameObject settingWindow;
+    public GameObject settingWindow, buttonSound;
 
     // Start is called before the first frame update
     void Start()
@@ -60,14 +60,18 @@ public class SoundManager : Singleton<SoundManager>
 
     public void OnClickSetButton()
     {
+        buttonSound.SetActive(true);
         settingWindow.SetActive(true);
-        settingWindow.transform.DOScale(new Vector2(1, 1), 1.5f).SetEase(Ease.InOutCirc);
+        settingWindow.GetComponentInChildren<Button>().interactable = false;
+        //Debug.Log(settingWindow);
+        settingWindow.transform.DOScale(new Vector2(1, 1), 1f).SetEase(Ease.InOutCirc);
         //settingWindow.transform.localScale = new Vector2(1, 1);
-        Invoke("Setting", 1.5f);
+        Invoke("Setting", 1f);
     }
 
     private void Setting()
     {
+        settingWindow.GetComponentInChildren<Button>().interactable = true;
         Time.timeScale = 0;
     }
 
@@ -75,13 +79,14 @@ public class SoundManager : Singleton<SoundManager>
     {
         Time.timeScale = 1;
         settingWindow.GetComponentInChildren<Button>().interactable = false;
-        settingWindow.transform.DOScale(new Vector2(0, 0), 1.5f).SetEase(Ease.InBack);
-        Invoke("S_Exit", 1.5f);
+        settingWindow.transform.DOScale(new Vector2(0, 0), 1f).SetEase(Ease.InBack);
+        Invoke("S_Exit", 1f);
     }
 
     private void S_Exit()
     {
         settingWindow.GetComponentInChildren<Button>().interactable = true;
         settingWindow.SetActive(false);
+        buttonSound.SetActive(false);
     }
 }
