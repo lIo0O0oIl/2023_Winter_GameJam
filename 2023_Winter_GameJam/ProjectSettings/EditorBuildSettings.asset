@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1. Scenes/SeaTheme(true)_2.unity
     guid: 20b08ff0bfdae534d9f447199bc0f9d7
+  - enabled: 1
+    path: Assets/1. Scenes/ClearScene.unity
+    guid: 1d04177a28d887e429850ab2652fc4a9
   m_configObjects: {}

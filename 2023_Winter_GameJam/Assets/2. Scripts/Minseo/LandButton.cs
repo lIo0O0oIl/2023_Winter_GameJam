@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class LandButton : MonoBehaviour
@@ -10,10 +11,18 @@ public class LandButton : MonoBehaviour
     [SerializeField]
     private GameObject point;
 
-    public void OnClickQuestion()
+    public void dkdkdk(bool a)
     {
-        point.SetActive(false);
-        question.SetActive(true);
+        if (a)
+        {
+            point.SetActive(false);
+            question.SetActive(true);
+        }
+        else
+        {
+            point.SetActive(true);
+            question.SetActive(false);
+        }
     }
 
     /*public void OnClickSet()
