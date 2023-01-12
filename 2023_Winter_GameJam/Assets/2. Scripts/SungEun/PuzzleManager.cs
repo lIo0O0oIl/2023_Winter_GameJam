@@ -63,6 +63,7 @@ public class PuzzleManager : MonoBehaviour
         for (int i = 0; i < controller_2.Length; i++)
         {
             controller_2[i].GetComponent<SpriteRenderer>().DOFade(1, 2);
+            Debug.Log(controller_2[i].name);
         }
         fader.GetComponent<SpriteRenderer>().DOFade(0, 2);
     }

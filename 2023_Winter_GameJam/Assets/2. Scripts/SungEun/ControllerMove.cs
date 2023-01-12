@@ -11,6 +11,8 @@ public class ControllerMove : MonoBehaviour
     public float speed;
     int x, y;
 
+    bool touch = false;
+
     private void Awake()
     {
         rigidbody2D = player.GetComponent<Rigidbody2D>();
@@ -31,8 +33,11 @@ public class ControllerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        x = (int)Input.GetAxisRaw("Horizontal");
-        y = (int)Input.GetAxisRaw("Vertical");
+        if (!touch)
+        {
+            x = (int)Input.GetAxisRaw("Horizontal");
+            y = (int)Input.GetAxisRaw("Vertical");
+        }
 
         if (x > 0)
         {
@@ -77,13 +82,16 @@ public class ControllerMove : MonoBehaviour
 
     public void Up(bool check)
     {
+        Debug.Log("À¸¾Ç");
         if (check)
         {
+            touch = true;
         //Debug.Log("¾÷");
             y = 1;
         }
         else
         {
+            touch = false;
             y = 0;
         }
     }
@@ -92,10 +100,12 @@ public class ControllerMove : MonoBehaviour
     {
         if (check)
         {
+            touch = true;
             y = -1;
         }
         else
         {
+            touch = false;
             y = 0;
         }
     }
@@ -104,10 +114,12 @@ public class ControllerMove : MonoBehaviour
     {
         if (check)
         {
+            touch = true;
             x = 1;
         }
         else
         {
+            touch = false;
             x = 0;
         }
     }
@@ -116,10 +128,12 @@ public class ControllerMove : MonoBehaviour
     {
         if (check)
         {
+            touch = true;
             x = -1;
         }
         else
         {
+            touch = false;
             x = 0;
         }
     }
