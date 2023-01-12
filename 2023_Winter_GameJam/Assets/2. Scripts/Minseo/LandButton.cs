@@ -16,10 +16,10 @@ public class LandButton : MonoBehaviour
         question.SetActive(true);
     }
 
-    public void OnClickSet()
+    /*public void OnClickSet()
     {
 
-    }
+    }*/
 
     public void OnClickExit()
     {

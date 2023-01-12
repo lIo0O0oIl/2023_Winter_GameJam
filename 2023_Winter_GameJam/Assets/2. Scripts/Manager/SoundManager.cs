@@ -18,11 +18,13 @@ public class SoundManager : Singleton<SoundManager>
     // Start is called before the first frame update
     void Start()
     {
-        if (File.Exists(Application.dataPath + "/8. Data/SaveData"))
+        if (File.Exists(Application.dataPath + "/8. Data/SaveData.txt"))
         {
+            Debug.Log("ºÒ·¯¿Ô½·´ô!");
             DataManager.Instance.Load();
+            Debug.Log(DataManager.Instance.playData.sound);
+            setting.value = DataManager.Instance.playData.sound;
         }
-        setting.value = DataManager.Instance.playData.sound;
     }
 
     public void Setting(float volume)
@@ -72,12 +74,14 @@ public class SoundManager : Singleton<SoundManager>
     public void OnClickExitSetting()
     {
         Time.timeScale = 1;
+        settingWindow.GetComponentInChildren<Button>().interactable = false;
         settingWindow.transform.DOScale(new Vector2(0, 0), 1.5f).SetEase(Ease.InBack);
         Invoke("S_Exit", 1.5f);
     }
 
     private void S_Exit()
     {
+        settingWindow.GetComponentInChildren<Button>().interactable = true;
         settingWindow.SetActive(false);
     }
 }
