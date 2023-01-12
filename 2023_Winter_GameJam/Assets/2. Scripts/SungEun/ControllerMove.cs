@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ControllerMove : MonoBehaviour
 {
@@ -30,7 +31,47 @@ public class ControllerMove : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Debug.Log(rigidbody2D.velocity);
+        x = (int)Input.GetAxisRaw("Horizontal");
+        y = (int)Input.GetAxisRaw("Vertical");
+
+        if (x > 0)
+        {
+            GameObject.Find("Right").GetComponent<Image>().color = new Color(0.7843137f, 0.7843137f, 0.7843137f, 1);
+        }
+        else
+        {
+            GameObject.Find("Right").GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        }
+
+        if (x < 0)
+        {
+            GameObject.Find("Left").GetComponent<Image>().color = new Color(0.7843137f, 0.7843137f, 0.7843137f, 1);
+        }
+        else
+        {
+            GameObject.Find("Left").GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        }
+
+        if (y > 0)
+        {
+            GameObject.Find("Up").GetComponent<Image>().color = new Color(0.7843137f, 0.7843137f, 0.7843137f, 1);
+        }
+        else
+        {
+            GameObject.Find("Up").GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        }
+
+        if (y < 0)
+        {
+            GameObject.Find("Down").GetComponent<Image>().color = new Color(0.7843137f, 0.7843137f, 0.7843137f, 1);
+        }
+        else
+        {
+            GameObject.Find("Down").GetComponent<Image>().color = new Color(1, 1, 1, 1);
+        }
+
+
+
         rigidbody2D.velocity = new Vector2(x, y).normalized * speed/* * Time.deltaTime*/;
     }
 

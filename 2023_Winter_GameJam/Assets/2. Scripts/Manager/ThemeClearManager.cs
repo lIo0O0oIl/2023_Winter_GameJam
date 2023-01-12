@@ -15,8 +15,7 @@ public class ThemeClearManager : MonoBehaviour
             //Debug.Log("ºÒ·¯¿Ô½·´ô!");
             DataManager.Instance.Load();
         }
-
-        //Debug.Log(DataManager.Instance.playData.seaClear);
+        
 
         if (DataManager.Instance.playData.landClear == true)
         {
@@ -30,6 +29,11 @@ public class ThemeClearManager : MonoBehaviour
             sea.GetComponent<BoxCollider2D>().enabled = false;
             sea.GetComponent<SpriteRenderer>().color = new Color(0.5f, 0.5f, 0.5f, 1);
             seaText.SetActive(true);
+        }
+
+        if (DataManager.Instance.playData.landClear && DataManager.Instance.playData.seaClear)
+        {
+            Debug.Log("Å¬¸®¾î");
         }
     }
 }
