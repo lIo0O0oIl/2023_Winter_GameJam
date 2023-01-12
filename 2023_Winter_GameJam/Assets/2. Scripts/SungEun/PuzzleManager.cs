@@ -81,6 +81,7 @@ public class PuzzleManager : MonoBehaviour
             fader.transform.localScale = new Vector2(fader.transform.localScale.x, 7.130427f);
             fader.GetComponent<SpriteRenderer>().DOFade(1, 3);
             Invoke("puzzle_Start_2", 3f);
+            Question1.Instance.level = 2;
         }
     }
 
@@ -110,6 +111,7 @@ public class PuzzleManager : MonoBehaviour
         Debug.Log("2´Ü°è ÆÛÁñ ±þ");
         fader.GetComponent<SpriteRenderer>().DOFade(1, 3);
         Invoke("puzzle_Start_3", 3f);
+        Question1.Instance.level = 3;
     }
 
     public void puzzle_Start_3()
