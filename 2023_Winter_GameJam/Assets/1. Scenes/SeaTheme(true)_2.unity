@@ -696,7 +696,6 @@ GameObject:
   - component: {fileID: 125379936}
   - component: {fileID: 125379935}
   - component: {fileID: 125379934}
-  - component: {fileID: 125379938}
   m_Layer: 0
   m_Name: Player_3
   m_TagString: Player
@@ -811,25 +810,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125379933}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.463, y: 3.73, z: 0}
+  m_LocalPosition: {x: 0.014, y: 3.934, z: 0}
   m_LocalScale: {x: 0.5, y: 0.49999997, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &125379938
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 125379933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffa6860a0fcc64247b6d5d07f7cb2f61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &136953768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1733,7 +1720,7 @@ GameObject:
   - component: {fileID: 338651377}
   - component: {fileID: 338651376}
   - component: {fileID: 338651375}
-  - component: {fileID: 338651374}
+  - component: {fileID: 338651378}
   m_Layer: 0
   m_Name: FishHere
   m_TagString: Untagged
@@ -1741,18 +1728,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &338651374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 338651373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ffa6860a0fcc64247b6d5d07f7cb2f61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!61 &338651375
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1839,13 +1814,29 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338651373}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.43393, z: 0}
-  m_LocalScale: {x: 0.2909, y: 0.6959105, z: 1}
+  m_LocalPosition: {x: 0, y: 4.8, z: 0}
+  m_LocalScale: {x: 0.2909, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &338651378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338651373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ffa6860a0fcc64247b6d5d07f7cb2f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fader: {fileID: 1289868661}
+  clear:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &366132007
 GameObject:
   m_ObjectHideFlags: 0

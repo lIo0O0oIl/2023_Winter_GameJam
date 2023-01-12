@@ -55,7 +55,7 @@ public class Fish : MonoBehaviour
         {
             Debug.Log("lqkf ?");
             collision.gameObject.SetActive(true);
-            collision.transform.position = new Vector2(Random.Range(-2.233f, 2.259f), Random.Range(2.941f, 3.745f));
+            collision.transform.position = new Vector2(Random.Range(-2.233f, 2.259f), Random.Range(2.941f, 3.934f));
             collision.transform.DOScale(new Vector2(0.5f, 0.5f), 1).SetEase(Ease.InOutBack);
             collision.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
