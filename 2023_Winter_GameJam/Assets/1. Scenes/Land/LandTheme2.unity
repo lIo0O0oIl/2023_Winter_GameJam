@@ -6388,7 +6388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   question: {fileID: 1921629619}
-  point: {fileID: 0}
+  point: {fileID: 487354610}
 --- !u!4 &1191714226
 Transform:
   m_ObjectHideFlags: 0
