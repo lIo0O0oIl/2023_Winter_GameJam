@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 438828974}
   - component: {fileID: 438828975}
   m_Layer: 0
-  m_Name: GameStart
+  m_Name: GameStartFade
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -9,7 +9,7 @@ public class GameExitManager : MonoBehaviour
 
     private void Start()
     {
-        if (SceneManager.GetActiveScene().name == "SeaTheme(true)" || SceneManager.GetActiveScene().name == "SeaTheme(true)_2")
+        if (SceneManager.GetActiveScene().name != "Title"/* || SceneManager.GetActiveScene().name == "SeaTheme(true)_2"*/)
         {
             exitWindow.GetComponentInChildren<Text>().text = "Go Main?";
         }
@@ -52,7 +52,7 @@ public class GameExitManager : MonoBehaviour
 
     public void Yes()
     {
-        if (SceneManager.GetActiveScene().name == "SeaTheme(true)" || SceneManager.GetActiveScene().name == "SeaTheme(true)_2")
+        if (SceneManager.GetActiveScene().name != "Title"/* || SceneManager.GetActiveScene().name == "SeaTheme(true)_2"*/)
         {
             Time.timeScale = 1;
             SceneManager.LoadScene("Title");

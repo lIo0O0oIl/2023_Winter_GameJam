@@ -30,6 +30,7 @@ public class SoundManager : Singleton<SoundManager>
     public void Setting(float volume)
     {
         setting.value = volume;
+        //Button_Cilck();
         DataManager.Instance.playData.sound = volume;
         DataManager.Instance.Save();
     }
