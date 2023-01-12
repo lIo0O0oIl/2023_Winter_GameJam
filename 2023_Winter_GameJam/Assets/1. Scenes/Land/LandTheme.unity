@@ -7336,6 +7336,7 @@ MonoBehaviour:
   button_Click: {fileID: 1387100222}
   button_Click2: {fileID: 298601208}
   blop: {fileID: 174542445}
+  BGM: {fileID: 0}
   setting: {fileID: 1781724090}
   settingWindow: {fileID: 1627771439}
   buttonSound: {fileID: 1164968016}
