@@ -16,6 +16,18 @@ public class ControllerMove : MonoBehaviour
         //Debug.Log(rigidbody2D);
     }
 
+    private void Update()
+    {
+        if (x > 0)
+        {
+            player.transform.localScale = new Vector2(-Mathf.Abs(player.transform.localScale.x), player.transform.localScale.y);
+        }
+        if (x < 0)
+        {
+            player.transform.localScale = new Vector2(Mathf.Abs(player.transform.localScale.x), player.transform.localScale.y);
+        }
+    }
+
     private void FixedUpdate()
     {
         //Debug.Log(rigidbody2D.velocity);

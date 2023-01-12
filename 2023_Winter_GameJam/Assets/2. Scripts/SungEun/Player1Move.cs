@@ -27,6 +27,24 @@ public class Player1Move : MonoBehaviour
         {
             p2_rigidbody2D.velocity = new Vector2(x, y).normalized * speed/* * Time.deltaTime*/;
         }
+
+        if (gameObject.GetComponent<Rigidbody2D>().velocity.x > 0)
+        {
+            this.gameObject.transform.localScale = new Vector2(-Mathf.Abs(gameObject.transform.localScale.x), gameObject.transform.localScale.y);
+        }
+        if (gameObject.GetComponent<Rigidbody2D>().velocity.x < 0)
+        {
+            this.gameObject.transform.localScale = new Vector2(Mathf.Abs(gameObject.transform.localScale.x), gameObject.transform.localScale.y);
+        }
+
+        if (x > 0)
+        {
+            player2.transform.localScale = new Vector2(-Mathf.Abs(player2.transform.localScale.x), player2.transform.localScale.y);
+        }
+        if (x < 0)
+        {
+            player2.transform.localScale = new Vector2(Mathf.Abs(player2.transform.localScale.x), player2.transform.localScale.y);
+        }
     }
 
         private void OnTriggerEnter2D(Collider2D collision)
