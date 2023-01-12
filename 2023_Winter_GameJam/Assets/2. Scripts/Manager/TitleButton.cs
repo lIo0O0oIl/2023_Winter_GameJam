@@ -4,11 +4,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using DG.Tweening;
+using System.IO;
 
 public class TitleButton : MonoBehaviour
 {
     [SerializeField]
-    private GameObject theme;
+    private GameObject theme, themeManager;
     [SerializeField]
     private GameObject titleTxt;
     [SerializeField]
@@ -18,6 +19,8 @@ public class TitleButton : MonoBehaviour
 
     public GameObject obj1, obj2;
 
+    public GameObject gameReset;
+
     //public GameObject settingWindow;
 
     [SerializeField]
@@ -26,32 +29,27 @@ public class TitleButton : MonoBehaviour
     public void OnClickStaerBtn()
     {
         startBtn.SetActive(true);
-        StartCoroutine(FandIn(1f));    
+        StartCoroutine(FandIn(1f));
+        Invoke("StartBtn", 1f);
     }
 
-    /*public void OnClickSetButton()
+    private void StartBtn()
     {
-        settingWindow.SetActive(true);
-        settingWindow.transform.DOScale(new Vector2(1, 1), 1.5f).SetEase(Ease.InOutBack);
-        Invoke("Setting", 1.5f);
+        themeManager.GetComponent<ThemeClearManager>().ThemeStart();
     }
 
-    private void Setting()
+
+    public void GameReset()
     {
-        Time.timeScale = 0;
+        gameReset.SetActive(true);
     }
 
-    public void OnClickExitSetting()
+    public void Click_GameReset()
     {
-        Time.timeScale = 1;
-        settingWindow.transform.DOScale(new Vector2(0, 0), 1.5f).SetEase(Ease.InOutBack);
-        Invoke("S_Exit", 1.5f);
+        File.Delete(Application.dataPath + "/8. Data/SaveData.txt");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    private void S_Exit()
-    {
-        settingWindow.SetActive(false);
-    }*/
 
     public void OnClickExitBtn()
     {
