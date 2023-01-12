@@ -23,10 +23,10 @@ public class DataManager : Singleton<DataManager>
         path = Application.dataPath + "/8. Data";
         if (!File.Exists(path)) Directory.CreateDirectory(path);
 
-        /*if (!File.Exists(Application.dataPath + "/8. Data/SaveData.txt"))
+        if (!File.Exists(Application.dataPath + "/8. Data/SaveData.txt"))
         {
             Save();
-        }*/
+        }
     }
 
     public void Save()
