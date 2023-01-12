@@ -41,6 +41,7 @@ public class BreathingGame : MonoBehaviour
             }
             else
             {
+                //StopCoroutine(Breating());
                 yield return null;
             }
 
@@ -92,6 +93,8 @@ public class BreathingGame : MonoBehaviour
         {
             StartCoroutine(GameOver());
         }
+
+        //StopCoroutine(faderFade());
     }
 
     IEnumerator GameOver()

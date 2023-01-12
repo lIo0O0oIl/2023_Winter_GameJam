@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/1. Scenes/Land/LandTheme.unity
     guid: 1f8a1c52e08709e4baabd57b96543501
   - enabled: 1
-    path: Assets/1. Scenes/SeaTheme.unity
-    guid: 3ad7fed745a551647b26579ada059565
-  - enabled: 1
     path: Assets/1. Scenes/Land/LandTheme1.unity
     guid: 2c8ff5ef7ae89dc43ae35d58f9616ae3
   - enabled: 1
@@ -23,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/1. Scenes/Land/LandTheme4.unity
     guid: b3383b41b3190ef4b8fa5cbd645d8859
+  - enabled: 1
+    path: Assets/1. Scenes/SeaTheme(true).unity
+    guid: e7b4cc142e7d91546a241cc2e9adc19b
+  - enabled: 1
+    path: Assets/1. Scenes/SeaTheme(true)_2.unity
+    guid: 20b08ff0bfdae534d9f447199bc0f9d7
   m_configObjects: {}

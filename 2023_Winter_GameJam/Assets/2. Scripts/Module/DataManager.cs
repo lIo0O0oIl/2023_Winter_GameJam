@@ -14,21 +14,19 @@ public class PlayData
 
 public class DataManager : Singleton<DataManager>
 {
-    public PlayData playData;
+    public PlayData playData = new PlayData();
 
     string path/* = Application.dataPath + "/6. Data"*/;
-
-    private void Awake()
-    {
-        playData = new PlayData();
-    }
 
     private void Start()
     {
         path = Application.dataPath + "/8. Data";
         if (!File.Exists(path)) Directory.CreateDirectory(path);
 
-        if (!File.Exists(Application.dataPath + "/8. Data/SaveData.txt")) Save();
+        /*if (!File.Exists(Application.dataPath + "/8. Data/SaveData.txt"))
+        {
+            Save();
+        }*/
     }
 
     public void Save()

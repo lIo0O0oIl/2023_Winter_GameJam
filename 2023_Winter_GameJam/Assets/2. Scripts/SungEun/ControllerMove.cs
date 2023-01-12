@@ -13,18 +13,20 @@ public class ControllerMove : MonoBehaviour
     private void Awake()
     {
         rigidbody2D = player.GetComponent<Rigidbody2D>();
+        //Debug.Log(rigidbody2D);
     }
 
     private void FixedUpdate()
     {
+        //Debug.Log(rigidbody2D.velocity);
         rigidbody2D.velocity = new Vector2(x, y).normalized * speed/* * Time.deltaTime*/;
     }
 
     public void Up(bool check)
     {
-        //Debug.Log("¾÷");
         if (check)
         {
+        //Debug.Log("¾÷");
             y = 1;
         }
         else
