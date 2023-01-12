@@ -1,20 +1,25 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class QuestionCollider : MonoBehaviour
+public class QuestionCollider : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
     [SerializeField]
     private GameObject question;
     [SerializeField]
     private GameObject point;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnPointerDown(PointerEventData eventData)
     {
-        if(collision.tag == "Player")
-        {
-            point.SetActive(true);
-            question.SetActive(false);
-        }
+        point.SetActive(false);
+        question.SetActive(true);
+    }
+
+    public void OnPointerUp(PointerEventData eventData)
+    {
+        point.SetActive(true);
+        question.SetActive(false);
     }
 }
