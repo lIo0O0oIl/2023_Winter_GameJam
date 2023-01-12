@@ -15,6 +15,14 @@ public class GameExitManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            Click_exitWindow();
+        }
+    }
+
     public void Click_exitWindow()
     {
         buttonSound.SetActive(true);

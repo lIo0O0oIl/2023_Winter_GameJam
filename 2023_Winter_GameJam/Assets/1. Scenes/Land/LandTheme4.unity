@@ -1288,7 +1288,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 894724224}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameExitManager, Assembly-CSharp
         m_MethodName: Click_exitWindow
         m_Mode: 1
@@ -2443,7 +2443,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 894724224}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameExitManager, Assembly-CSharp
         m_MethodName: OnClickExitExit
         m_Mode: 1
@@ -2505,6 +2505,7 @@ GameObject:
   - component: {fileID: 581921069}
   - component: {fileID: 581921068}
   - component: {fileID: 581921067}
+  - component: {fileID: 581921071}
   m_Layer: 5
   m_Name: ExitCanvas
   m_TagString: Untagged
@@ -2594,6 +2595,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &581921071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581921066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d173c2753ec1a604fa52114d682f71f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitWindow: {fileID: 894724222}
+  buttonSound: {fileID: 2090434982}
 --- !u!1 &599743286
 GameObject:
   m_ObjectHideFlags: 0
@@ -4241,7 +4256,6 @@ GameObject:
   - component: {fileID: 894724223}
   - component: {fileID: 894724226}
   - component: {fileID: 894724225}
-  - component: {fileID: 894724224}
   m_Layer: 5
   m_Name: ExitWindow
   m_TagString: Untagged
@@ -4272,20 +4286,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 200}
   m_SizeDelta: {x: 722.87, y: 383.8}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &894724224
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 894724222}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d173c2753ec1a604fa52114d682f71f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  exitWindow: {fileID: 894724222}
-  buttonSound: {fileID: 2090434982}
 --- !u!114 &894724225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4805,6 +4805,7 @@ MonoBehaviour:
   button_Click: {fileID: 1974148488}
   button_Click2: {fileID: 1978357723}
   blop: {fileID: 1527216966}
+  BGM: {fileID: 0}
   setting: {fileID: 908534859}
   settingWindow: {fileID: 1420990105}
   buttonSound: {fileID: 2090434982}
@@ -7199,7 +7200,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 894724224}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameExitManager, Assembly-CSharp
         m_MethodName: Yes
         m_Mode: 1
