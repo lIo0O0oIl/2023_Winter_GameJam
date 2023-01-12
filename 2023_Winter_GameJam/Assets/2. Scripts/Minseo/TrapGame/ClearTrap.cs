@@ -9,6 +9,8 @@ public class ClearTrap : MonoBehaviour
     {
         if(collision.tag == "Player")
         {
+            DataManager.Instance.playData.landClear = true;
+            DataManager.Instance.Save();
             SceneManager.LoadScene("ClearScene");
         }
     }

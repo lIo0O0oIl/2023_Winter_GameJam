@@ -7,6 +7,7 @@ public class ThemeClearManager : MonoBehaviour
 {
     public GameObject land, sea;
     public GameObject landText, seaText;
+    public GameObject recommendReStart;
 
     public void ThemeStart()
     {
@@ -33,6 +34,7 @@ public class ThemeClearManager : MonoBehaviour
 
         if (DataManager.Instance.playData.landClear && DataManager.Instance.playData.seaClear)
         {
+            recommendReStart.SetActive(true);
             Debug.Log("Å¬¸®¾î");
         }
     }
