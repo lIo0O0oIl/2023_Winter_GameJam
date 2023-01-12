@@ -1795,7 +1795,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1962916207}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameExitManager, Assembly-CSharp
         m_MethodName: OnClickExitExit
         m_Mode: 1
@@ -2390,7 +2390,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1962916207}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameExitManager, Assembly-CSharp
         m_MethodName: Yes
         m_Mode: 1
@@ -8963,7 +8963,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1962916207}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: GameExitManager, Assembly-CSharp
         m_MethodName: Click_exitWindow
         m_Mode: 1
@@ -9236,7 +9236,6 @@ GameObject:
   - component: {fileID: 1962916206}
   - component: {fileID: 1962916209}
   - component: {fileID: 1962916208}
-  - component: {fileID: 1962916207}
   m_Layer: 5
   m_Name: ExitWindow
   m_TagString: Untagged
@@ -9267,20 +9266,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 200}
   m_SizeDelta: {x: 722.87, y: 383.8}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1962916207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1962916205}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d173c2753ec1a604fa52114d682f71f8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  exitWindow: {fileID: 1962916205}
-  buttonSound: {fileID: 1164968016}
 --- !u!114 &1962916208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9879,6 +9864,7 @@ GameObject:
   - component: {fileID: 2074539892}
   - component: {fileID: 2074539891}
   - component: {fileID: 2074539890}
+  - component: {fileID: 2074539894}
   m_Layer: 5
   m_Name: ExitCanvas
   m_TagString: Untagged
@@ -9968,6 +9954,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &2074539894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074539889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d173c2753ec1a604fa52114d682f71f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exitWindow: {fileID: 1962916205}
+  buttonSound: {fileID: 1164968016}
 --- !u!1 &2088423876
 GameObject:
   m_ObjectHideFlags: 0
