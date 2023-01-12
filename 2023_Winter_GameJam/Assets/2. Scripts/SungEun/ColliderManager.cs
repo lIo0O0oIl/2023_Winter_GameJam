@@ -11,7 +11,7 @@ public class ColliderManager : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("ö‘∂Û");
+            //Debug.Log("ö‘∂Û");
             run.Invoke();
         }
         else if (collision.name == "Goal")

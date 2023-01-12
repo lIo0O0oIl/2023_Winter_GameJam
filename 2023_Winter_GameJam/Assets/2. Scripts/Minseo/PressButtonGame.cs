@@ -15,6 +15,8 @@ public class PressButtonGame : MonoBehaviour
     [SerializeField]
     private Image image;
 
+    public AudioSource flower;
+
     int count = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -60,6 +62,8 @@ public class PressButtonGame : MonoBehaviour
             count++;
             Check();
         }
+        flower.volume = DataManager.Instance.playData.sound;
+        flower.Play();
     }
 
     private void Check()
@@ -72,6 +76,7 @@ public class PressButtonGame : MonoBehaviour
 
     IEnumerator FandIn(float time)
     {
+        yield return new WaitForSeconds(.3f);
         Color color = image.color;
         while (color.a < 1f)
         {

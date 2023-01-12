@@ -16,7 +16,7 @@ public class ThemeClearManager : MonoBehaviour
             DataManager.Instance.Load();
         }
 
-        Debug.Log(DataManager.Instance.playData.seaClear);
+        //Debug.Log(DataManager.Instance.playData.seaClear);
 
         if (DataManager.Instance.playData.landClear == true)
         {
