@@ -9,7 +9,7 @@ public class SoundManager : Singleton<SoundManager>
 {
     public AudioSource controller_1Click;
     public AudioSource button_Click, button_Click2;
-    public AudioSource blop, BGM;
+    public AudioSource blop /*BGM*/;
 
     public Slider setting;
 
@@ -25,11 +25,13 @@ public class SoundManager : Singleton<SoundManager>
             Debug.Log(DataManager.Instance.playData.sound);
             setting.value = DataManager.Instance.playData.sound;
         }
+
+        //BGM = transform.Find("BGM").GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        BGM.volume = DataManager.Instance.playData.sound;
+        //BGM.volume = DataManager.Instance.playData.sound;
     }
 
     public void Setting(float volume)
