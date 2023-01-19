@@ -68,14 +68,44 @@ public class PuzzleManager : MonoBehaviour
         fader.GetComponent<SpriteRenderer>().DOFade(0, 2);
     }
 
-    int water_Count = 7;
+    //int water_Count = 7;
+    bool[] water_Count = new bool[7] { false, false, false, false, false, false, false};
+    bool water_Clear = false;
 
-    public void puzzle_Clear_1()
+    public void puzzle_Clear_1(int a)
     {
-        water_Count--;
+        //water_Count--;
         //Debug.Log(water_Count);
 
-        if (water_Count <= 0)
+        /*if (water_Count <= 0)
+        {
+            fader.transform.position = new Vector2(fader.transform.position.x, 1.2545f);
+            fader.transform.localScale = new Vector2(fader.transform.localScale.x, 7.130427f);
+            fader.GetComponent<SpriteRenderer>().DOFade(1, 3);
+            Invoke("puzzle_Start_2", 3f);
+            Question1.Instance.level = 2;
+        }*/
+        Debug.Log(a);
+
+        water_Count[a] = true;
+
+        /*if (water_Count[0] == true && water_Count[1] == true && water_Count[2] == true && water_Count[3] == true &&
+            water_Count[4] == true && water_Count[5] == true && water_Count[6] == true)
+        {
+            water_Clear = true;
+        }*/
+
+        for (int i = 0; i < water_Count.Length; i++)
+        {
+            if (water_Count[i] == false)
+            {
+                water_Clear = false;
+                break;
+            }
+            water_Clear = true;
+        }
+
+            if (water_Clear)
         {
             fader.transform.position = new Vector2(fader.transform.position.x, 1.2545f);
             fader.transform.localScale = new Vector2(fader.transform.localScale.x, 7.130427f);

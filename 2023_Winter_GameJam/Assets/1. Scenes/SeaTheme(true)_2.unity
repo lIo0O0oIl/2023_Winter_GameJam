@@ -817,7 +817,6 @@ MonoBehaviour:
   button_Click: {fileID: 1852313084}
   button_Click2: {fileID: 2116134746}
   blop: {fileID: 1394808106}
-  BGM: {fileID: 0}
   setting: {fileID: 2140609788}
   settingWindow: {fileID: 228294512}
   buttonSound: {fileID: 800393072}
@@ -4824,6 +4823,7 @@ GameObject:
   - component: {fileID: 1082665052}
   - component: {fileID: 1082665056}
   - component: {fileID: 1082665057}
+  - component: {fileID: 1082665058}
   m_Layer: 0
   m_Name: Player_2
   m_TagString: Player
@@ -4952,7 +4952,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1082665051}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01fd6159bae893d4c81e8223d5af05b7, type: 3}
   m_Name: 
@@ -4983,6 +4983,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1082665058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082665051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0b0d0114775bc4083bb6136a959130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player2: {fileID: 125379933}
+  speed: 3
+  upY: 0
+  downY: 0
+  leftX: 0
+  rightX: 0
+  changeColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+  basicColor: {r: 1, g: 1, b: 1, a: 1}
+  up: 0
+  down: 0
+  left: 0
+  right: 0
 --- !u!1 &1131256828
 GameObject:
   m_ObjectHideFlags: 0
@@ -5511,6 +5535,7 @@ GameObject:
   - component: {fileID: 1374866091}
   - component: {fileID: 1374866096}
   - component: {fileID: 1374866097}
+  - component: {fileID: 1374866098}
   m_Layer: 0
   m_Name: Player_1
   m_TagString: Player
@@ -5670,6 +5695,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1374866098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374866090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0b0d0114775bc4083bb6136a959130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player2: {fileID: 1082665051}
+  speed: 3
+  upY: 0
+  downY: 0
+  leftX: 0
+  rightX: 0
+  changeColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+  basicColor: {r: 1, g: 1, b: 1, a: 1}
+  up: 0
+  down: 0
+  left: 0
+  right: 0
 --- !u!1 &1394290966
 GameObject:
   m_ObjectHideFlags: 0

@@ -1554,7 +1554,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &354108692
 Transform:
   m_ObjectHideFlags: 0
@@ -3765,7 +3765,7 @@ PrefabInstance:
       objectReference: {fileID: 1169108528}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -3794,6 +3794,10 @@ PrefabInstance:
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PuzzleManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
+      propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -3976,7 +3980,7 @@ PrefabInstance:
       objectReference: {fileID: 1169108528}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -4005,6 +4009,10 @@ PrefabInstance:
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PuzzleManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
+      propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -5034,7 +5042,7 @@ PrefabInstance:
       objectReference: {fileID: 1169108528}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5063,6 +5071,10 @@ PrefabInstance:
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PuzzleManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
+      propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -5168,7 +5180,7 @@ PrefabInstance:
       objectReference: {fileID: 1169108528}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -5197,6 +5209,10 @@ PrefabInstance:
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PuzzleManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
+      propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -5956,14 +5972,14 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -0.37011093, y: 0.4929789}
       - {x: -0.36315, y: 0.28485942}
-      - {x: -0.24529696, y: 0.15797782}
-      - {x: -0.30943567, y: 0.014492575}
+      - {x: -0.31256607, y: 0.12658575}
+      - {x: -0.3475547, y: 0.021219555}
       - {x: -0.40872654, y: -0.17627892}
       - {x: -0.2914371, y: -0.39468437}
       - {x: 0.24580002, y: -0.3806422}
       - {x: 0.45436326, y: -0.32234237}
       - {x: 0.47542638, y: -0.11302598}
-      - {x: -0.070311695, y: -0.103652}
+      - {x: 0.19876376, y: 0.09142786}
       - {x: 0.047628522, y: 0.3073636}
       - {x: -0.2183418, y: 0.50702107}
 --- !u!4 &1095510659 stripped
@@ -7452,6 +7468,7 @@ GameObject:
   - component: {fileID: 1374866092}
   - component: {fileID: 1374866096}
   - component: {fileID: 1374866097}
+  - component: {fileID: 1374866098}
   m_Layer: 0
   m_Name: Player_1
   m_TagString: Player
@@ -7554,7 +7571,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1374866090}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 01fd6159bae893d4c81e8223d5af05b7, type: 3}
   m_Name: 
@@ -7593,17 +7610,41 @@ PolygonCollider2D:
     - - {x: -0.30124876, y: 0.48363972}
       - {x: -0.49644834, y: 0.4076581}
       - {x: -0.4918122, y: 0.23498154}
-      - {x: -0.3970549, y: 0.15803894}
-      - {x: -0.40432692, y: 0.032917365}
+      - {x: -0.46208158, y: 0.11991991}
+      - {x: -0.47608045, y: 0.014978923}
       - {x: -0.52486134, y: -0.21019682}
       - {x: -0.38067415, y: -0.36148697}
       - {x: 0.27412573, y: -0.37924507}
       - {x: 0.48934516, y: -0.2528162}
       - {x: 0.4041064, y: -0.15488398}
-      - {x: 0.16575931, y: -0.10648053}
-      - {x: -0.19294138, y: -0.07348834}
+      - {x: 0.20163606, y: -0.059392177}
+      - {x: 0.042499855, y: 0.031899653}
       - {x: -0.053060338, y: 0.1369755}
       - {x: -0.16978398, y: 0.37924525}
+--- !u!114 &1374866098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374866090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0b0d0114775bc4083bb6136a959130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player2: {fileID: 1082665051}
+  speed: 3
+  upY: 0
+  downY: 0
+  leftX: 0
+  rightX: 0
+  changeColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+  basicColor: {r: 1, g: 1, b: 1, a: 1}
+  up: 0
+  down: 0
+  left: 0
+  right: 0
 --- !u!1 &1381730324
 GameObject:
   m_ObjectHideFlags: 0
@@ -8456,7 +8497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1436609121
 Transform:
   m_ObjectHideFlags: 0
@@ -8920,7 +8961,7 @@ PrefabInstance:
       objectReference: {fileID: 1169108528}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -8949,6 +8990,10 @@ PrefabInstance:
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PuzzleManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
+      propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -9054,7 +9099,7 @@ PrefabInstance:
       objectReference: {fileID: 1169108528}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -9083,6 +9128,10 @@ PrefabInstance:
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PuzzleManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
+      propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -11411,7 +11460,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -354.6, y: 127}
+  m_AnchoredPosition: {x: -355, y: 127}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2031642114
@@ -11979,7 +12028,7 @@ PrefabInstance:
       objectReference: {fileID: 1169108528}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2904766780531563298, guid: eceb58abe69708d418695f52ee22b0e2, type: 3}
       propertyPath: clear_1.m_PersistentCalls.m_Calls.Array.data[0].m_Target
