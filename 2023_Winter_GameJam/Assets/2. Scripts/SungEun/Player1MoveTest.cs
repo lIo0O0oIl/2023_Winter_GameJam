@@ -47,6 +47,32 @@ public class Player1MoveTest : MonoBehaviour
                 p2_rigidbody2D.velocity = new Vector2(rightX, p2_rigidbody2D.velocity.y).normalized * speed;
             }
 
+            if (!up && !down)
+            {
+                if (right)
+                {
+                    p2_rigidbody2D.velocity = new Vector2(rightX, 0).normalized * speed;
+                }
+
+                if (left)
+                {
+                    p2_rigidbody2D.velocity = new Vector2(leftX, 0).normalized * speed;
+                }
+            }
+
+            if (!left && !right)
+            {
+                if (up)
+                {
+                    p2_rigidbody2D.velocity = new Vector2(0, upY).normalized * speed;
+                }
+
+                if (down)
+                {
+                    p2_rigidbody2D.velocity = new Vector2(0, downY).normalized * speed;
+                }
+            }
+
             if (!up && !down && !left && !right)
             {
                 p2_rigidbody2D.velocity = new Vector2(0, 0);
