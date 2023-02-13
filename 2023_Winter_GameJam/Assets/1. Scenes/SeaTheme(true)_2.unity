@@ -1929,6 +1929,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffa6860a0fcc64247b6d5d07f7cb2f61, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite1: {fileID: -156712334, guid: 48de6d7088af96f44b988073d92ed062, type: 3}
+  sprite2: {fileID: 2066362999, guid: 48de6d7088af96f44b988073d92ed062, type: 3}
   fader: {fileID: 1289868661}
 --- !u!1 &366132007
 GameObject:

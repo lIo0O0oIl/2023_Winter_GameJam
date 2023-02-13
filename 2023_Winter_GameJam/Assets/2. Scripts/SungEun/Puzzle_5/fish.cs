@@ -10,6 +10,8 @@ public class Fish : MonoBehaviour
     BoxCollider2D boxCollider2D;
     //4.43393
 
+    public Sprite sprite1, sprite2;
+
     int count = 4;
 
     public SpriteRenderer fader;
@@ -56,6 +58,14 @@ public class Fish : MonoBehaviour
         {
             Debug.Log("lqkf ?");
             collision.gameObject.SetActive(true);
+            if (collision.gameObject.GetComponent<SpriteRenderer>().sprite == sprite1)
+            {
+                collision.gameObject.GetComponent<SpriteRenderer>().sprite = sprite2;
+            }
+            else
+            {
+                collision.gameObject.GetComponent<SpriteRenderer>().sprite = sprite1;
+            }
             collision.transform.position = new Vector2(Random.Range(-2.233f, 2.259f), Random.Range(2.941f, 3.934f));
             collision.transform.DOScale(new Vector2(0.5f, 0.5f), 1).SetEase(Ease.InOutBack);
             collision.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;

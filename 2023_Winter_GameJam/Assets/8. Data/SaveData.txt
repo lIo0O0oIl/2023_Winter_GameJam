@@ -1,1 +1,1 @@
-{"sound":0.5,"landClear":true,"seaClear":false}
+{"sound":0.5,"landClear":false,"seaClear":false}
